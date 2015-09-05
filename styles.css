@@ -1,0 +1,215 @@
+/* custom fonts */
+/* ########## */
+@font-face {
+	font-family: Michroma;
+	src: url(fonts/Michroma.ttf);
+}
+@font-face {
+	font-family: Play;
+	src: url(fonts/Play-Regular.ttf);
+}
+/* font styles */
+/* ######## */
+a {
+	text-decoration: none;
+	color: #7AB900;
+}
+.link a, p {
+	font-family: Play;
+}
+h1, h3 {
+	color: #fff;
+	font-family: Michroma;
+	margin: 0px;
+	margin-left: 4px;
+}
+/* body background */
+/* ############# */
+body {
+  background-image: url("images/background.jpg");
+}
+#header {
+	zoom: 1;
+	padding: 8px 0;
+}
+#header img {
+	width: 100%;
+}
+/* main navigation menu styles */
+/* ###################### */
+#nav_menu, #container {
+  zoom: 1;
+  width: auto;
+  background: rgba(0,0,0,0.95);
+  padding: 8px 0;
+}
+#nav_menu:before {
+  content: '';
+  display: block;
+}
+#nav_menu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+	display: block;
+	background: rgb(0,0,0);
+	font-size: 12px;
+	font-family: Michroma,Verdana, Helvetica, Arial, sans-serif;
+	margin: -20px 0px 0px;
+	padding: 0;
+	border-top: 1px solid rgb(122, 185, 0);
+	border-bottom: 1px solid rgb(122,185,0);
+	border-radius: 9px;
+	zoom: 1;
+}
+#nav_menu ul:before {
+	content: '';
+	display: block;
+}
+#nav_menu ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#nav_menu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#nav_menu li a {
+  float: left;
+  color: #A79787;
+  text-decoration: none;
+  height: 24px;
+  padding: 9px 15px 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+#nav_menu li:hover,
+#nav_menu .active {
+  text-decoration: none;
+  border-bottom: 2px solid #7ab900;
+}
+#nav_menu li:hover a {
+  color: #fff;
+}
+#nav_menu .active a {
+  color: #fff;
+  font-weight: 700;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 156%;
+	left: 88px;
+	padding: 0px;
+	background: rgba(0, 0, 0, 0.99);
+	box-shadow: 3px 3px 12px rgba(69,69,69,0.5);
+	border-top: none;
+}
+#nav_menu ul .drop_down {
+	left: 206px;
+}
+#nav_menu ul ul li {
+	float:none;
+	width:200px
+}
+#nav_menu ul ul a {
+	line-height:120%;
+	padding:10px 15px;
+}
+#nav_menu ul ul a:hover {
+	border-left: 2px solid #7ab900;
+	text-shadow: 0px 0px 0px #7ab900;
+}
+#nav_menu ul li:hover > ul {
+	display:block
+}
+/* content holder styles */
+/* ################ */
+.holder {
+  zoom: 1;
+  width: auto;
+  height: auto;
+  display: block;
+}
+.block {
+	width: 97%;
+	height: auto;
+	display: block;
+	background: rgba(69, 69, 69, 0.1) none repeat scroll 0% 0%;
+	margin: 0px 6px 0px 18px;
+	padding: 12px;
+}
+.block_content {
+	background: url(images/background.jpg);
+	width: 100%;
+	padding: 6px;
+}
+.block_content p {
+	color: #fff;
+	font-size: 20px;
+    line-height: 24px;
+    margin: 4px;
+}
+.block_content h3 {
+	margin-left: 12px;
+}
+.block_content #header img {
+	width: 19%;
+	margin-right: 10px;
+}
+.block_content img {
+	width: 100%;
+}
+/* float styles */
+/* ######## */
+.float_head {
+	background: rgba(0,0,0,0.8);
+	border-top: 1px solid #7ab900;
+	border-bottom: 1px solid #7ab900;
+	border-radius: 12px;
+}
+.img_float {
+	width: 23%;
+	float: right;
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+        margin-top: 12px;
+        padding: 1px 0px 1px 10px;
+        border-top: 1px solid #7AB900;
+        border-bottom: 1px solid #7AB900;
+        border-radius: 12px;
+}
+.img_float2 {
+	width: 23%;
+	float: right;
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+        margin-top: 20px;
+        padding: 1px 0px 1px 10px;
+        border-top: 1px solid #7AB900;
+        border-bottom: 1px solid #7AB900;
+        border-radius: 12px;
+}
+.float, .float2 {
+	width: 72.5%;
+	background: rgba(0, 0, 0, 0.8);
+	margin-top: 12px;
+	padding: 4px 0px 4px 10px;
+	border-top: 1px solid #7ab900;
+	border-bottom: 1px solid #7ab900;
+	border-radius: 12px;
+}
+.float3, .footer_float {
+	width: 99.5%;
+	background: rgba(0, 0, 0, 0.8);
+	margin-top: 12px;
+	padding: 4px 0px 4px 10px;
+	border-top: 1px solid #7ab900;
+	border-bottom: 1px solid #7ab900;
+	border-radius: 12px;
+}

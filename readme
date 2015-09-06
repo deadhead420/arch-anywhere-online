@@ -1,0 +1,6 @@
+List of changes 
+---------------
+
+1. Cleaned up the code a bit.
+2. Removed the footer style and centered it.
+3. Removed the media_style link from html pages and inserted it to the css.

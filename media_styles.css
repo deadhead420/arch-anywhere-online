@@ -1,0 +1,38 @@
+/* media device settings */
+/* ####################  */
+@media screen and (max-width: 600px) {
+	.block {
+		margin: 0px !important;
+	}
+	.block_content {
+		padding: 0px !important;
+		margin-top: 3px;
+	}
+	.img_float {
+		display: none;
+	}
+	.float, .float2 {
+		width: 99.5% !important;
+	}
+}
+@media screen and (max-width: 1660px) {
+	.vid {
+		width: 420px;
+		height: 345px;
+		margin: 6px !important;
+	}
+}
+@media screen and (max-width: 1345px) {
+	.vid {
+		width: 380px;
+		height: 305px;
+		margin: 4px !important;
+	}
+}
+@media screen and (max-width: 1212px) {
+	.vid {
+		width: 345px;
+		height: 282px;
+		margin: 3px !important;
+	}
+}

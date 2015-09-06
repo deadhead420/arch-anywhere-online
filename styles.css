@@ -35,13 +35,18 @@ body {
 #header img {
 	width: 100%;
 }
-/* main navigation menu styles */
-/* ###################### */
-#nav_menu, #container {
+#container {
   zoom: 1;
   width: auto;
   background: rgba(0,0,0,0.95);
-  padding: 8px 0;
+}
+/* main navigation menu styles */
+/* ###################### */
+#nav_menu {
+  zoom: 1;
+  width: auto;
+  background: rgba(0,0,0,0.95);
+  margin-top: 9px;
 }
 #nav_menu:before {
   content: '';
@@ -132,19 +137,12 @@ body {
 }
 /* content holder styles */
 /* ################ */
-.holder {
-  zoom: 1;
-  width: auto;
-  height: auto;
-  display: block;
-}
 .block {
-	width: 97%;
+	width: 98.8%;
 	height: auto;
 	display: block;
 	background: rgba(69, 69, 69, 0.1) none repeat scroll 0% 0%;
-	margin: 0px 6px 0px 18px;
-	padding: 12px;
+	margin: 0px 6px 0px 6px;
 }
 .block_content {
 	background: url(images/background.jpg);
@@ -152,8 +150,8 @@ body {
 	padding: 6px;
 }
 .block_content p {
-	color: #fff;
-	font-size: 20px;
+   color: #fff;
+   font-size: 20px;
     line-height: 24px;
     margin: 4px;
 }
@@ -179,23 +177,13 @@ body {
 	width: 23%;
 	float: right;
 	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
-        margin-top: 12px;
+	margin-top: 12px;
         padding: 1px 0px 1px 10px;
-        border-top: 1px solid #7AB900;
-        border-bottom: 1px solid #7AB900;
-        border-radius: 12px;
+   	border-top: 1px solid #7AB900;
+   	border-bottom: 1px solid #7AB900;
+   	border-radius: 12px;
 }
-.img_float2 {
-	width: 23%;
-	float: right;
-	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
-        margin-top: 20px;
-        padding: 1px 0px 1px 10px;
-        border-top: 1px solid #7AB900;
-        border-bottom: 1px solid #7AB900;
-        border-radius: 12px;
-}
-.float, .float2 {
+.float {
 	width: 72.5%;
 	background: rgba(0, 0, 0, 0.8);
 	margin-top: 12px;
@@ -204,7 +192,7 @@ body {
 	border-bottom: 1px solid #7ab900;
 	border-radius: 12px;
 }
-.float3, .footer_float {
+.footer_float, .video_float {
 	width: 99.5%;
 	background: rgba(0, 0, 0, 0.8);
 	margin-top: 12px;
@@ -212,4 +200,7 @@ body {
 	border-top: 1px solid #7ab900;
 	border-bottom: 1px solid #7ab900;
 	border-radius: 12px;
+}
+.vid {
+	margin: 9px;
 }

@@ -149,15 +149,15 @@ body {
 	margin: 0px 6px 0px 6px;
 }
 .block_content {
-	background: url(images/background.jpg);
+	background: url(images/background.jpg); 
 	width: 100%;
 	padding: 6px;
 }
 .block_content p {
    color: #fff;
-   font-size: 20px;
-    line-height: 24px;
-    margin: 4px;
+   font-size: 16px;
+   line-height: 24px;
+   margin: 4px;
 }
 .block_content h3 {
 	margin-left: 12px;
@@ -175,7 +175,7 @@ body {
 	background: rgba(0,0,0,0.8);
 	border-top: 1px solid #7ab900;
 	border-bottom: 1px solid #7ab900;
-	border-radius: 12px;
+	border-radius: 3px;
 }
 .img_float {
 	width: 23%;
@@ -185,7 +185,7 @@ body {
         padding: 1px 0px 1px 10px;
    	border-top: 1px solid #7AB900;
    	border-bottom: 1px solid #7AB900;
-   	border-radius: 12px;
+   	border-radius: 3px;
 }
 .float {
 	width: 72.5%;
@@ -194,16 +194,14 @@ body {
 	padding: 4px 0px 4px 10px;
 	border-top: 1px solid #7ab900;
 	border-bottom: 1px solid #7ab900;
-	border-radius: 12px;
+	border-radius: 3px;
 }
 .footer_float, .video_float {
 	width: 99.5%;
-	background: rgba(0, 0, 0, 0.8);
+	text-align: center;
+	/*background: rgba(0, 0, 0, 0.8); */
 	margin-top: 12px;
 	padding: 4px 0px 4px 10px;
-	border-top: 1px solid #7ab900;
-	border-bottom: 1px solid #7ab900;
-	border-radius: 12px;
 }
 .vid {
 	margin: 9px;

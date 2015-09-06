@@ -1,3 +1,6 @@
+/* Imports */ 
+@import media_styles.css; 
+
 /* custom fonts */
 /* ########## */
 @font-face {
@@ -15,18 +18,19 @@ a {
 	color: #7AB900;
 }
 .link a, p {
-	font-family: Play;
+	font-family: Play, sans-serif;
 }
 h1, h3 {
 	color: #fff;
-	font-family: Michroma;
+	font-family: Michroma, sans-serif;
 	margin: 0px;
 	margin-left: 4px;
 }
 /* body background */
 /* ############# */
 body {
-  background-image: url("images/background.jpg");
+  background-color: #252525;
+  font-size: 62.5%;
 }
 #header {
 	zoom: 1;
@@ -64,11 +68,11 @@ body {
 	background: rgb(0,0,0);
 	font-size: 12px;
 	font-family: Michroma,Verdana, Helvetica, Arial, sans-serif;
-	margin: -20px 0px 0px;
+	margin: -15px 0px 0px;
 	padding: 0;
-	border-top: 1px solid rgb(122, 185, 0);
-	border-bottom: 1px solid rgb(122,185,0);
-	border-radius: 9px;
+	border-top: 0px solid rgb(122, 185, 0);
+	border-bottom: 0px solid rgb(122,185,0);
+	border-radius: 0px;
 	zoom: 1;
 }
 #nav_menu ul:before {
@@ -90,7 +94,7 @@ body {
   float: left;
   color: #A79787;
   text-decoration: none;
-  height: 24px;
+  height: 30px;
   padding: 9px 15px 0;
   font-weight: normal;
   font-size: 14px;
@@ -118,7 +122,8 @@ body {
 	border-top: none;
 }
 #nav_menu ul .drop_down {
-	left: 206px;
+	left: 208px;
+	margin-top: -23px;
 }
 #nav_menu ul ul li {
 	float:none;
@@ -129,8 +134,7 @@ body {
 	padding:10px 15px;
 }
 #nav_menu ul ul a:hover {
-	border-left: 2px solid #7ab900;
-	text-shadow: 0px 0px 0px #7ab900;
+	border-left: 0px solid #7ab900;
 }
 #nav_menu ul li:hover > ul {
 	display:block

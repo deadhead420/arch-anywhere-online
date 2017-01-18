@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/styles.css">
+   <link rel="stylesheet" href="media_styles.css">
+   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+   <link rel="manifest" href="/images/favicons/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <title>Arch-Anywhere</title>
+</head>
+<body>
+
+<div id="archnavbar" class="anb-home">
+	<div id="archnavbarlogo"><h1><a href="/" title="Return Home">Arch Anywhere</a></h1></div>
+        <div id="archnavbarmenu">
+            <ul id="archnavbarlist">
+                <li id="anb-home"><a href="/" title="Arch Anywhere Home">Home</a></li>
+                <li id="anb-forums"><a href="/forums/" title="Community Forums">Forums</a></li>
+                <li id="anb-packages"><a href="/packages/" title="Arch Anywhere Wiki">Packages</a></li>
+				<li id="anb-content"><a href="/content/" title="Content & Features">Content</a></li>
+                <li id="anb-download"><a href="/download/" title="Get Arch Anywhere">Download</a></li>
+            </ul>
+        </div>
+</div>
+
+<div id="content">
+	<div id="dev-navbar"></div>
+		<div id="content-box">
+			<h2>Arch Anywhere 2.2.2 Release Details</h2>
+			<p>The look and feel of the installer has changed immensely! I've done away with whiptail in favor of the much more feature rich and customizable dialog. The results truly show in this release, the aesthetics of the installer are unlike anything else I've seen. Many hours were spent getting the colors and the scheme to work the way it does and I'm very pleased with the final outcome.</p><br>
+			<p>Aside from general aesthetics I've also vastly improved the loading bars. Every loading bar now displays what it is doing, along with the actual command which is running. This allows the user to see whats actually going on in the background while they install arch. Pacstrap is also setup to output to the loading bar, meaning you are updated with the actual progress of the installer every .5 seconds in a loop. I have been wanting to do something like this from the very beginning but whiptail never allowed me the flexability I needed. Switiching the menu system to dialog has been a huge step in the right direction.</p><br>
+			<p>Support for SysLinux bootloader has been added. Users now have the option to select grub, syslinux, or none as their bootloader. Along with this netctl is given as an option along with networkmanager giving the user the ability to select their prefered network utility.</p><br>
+			<p>Some errors with EFI boot have been fixed and it is now as stable as ever when using grub or syslinux. I have also added the ability to declare a custom esp mountpoint rather than just /boot. Users now have the ability to mount the esp at /mnt/efi when using manual partitioning with EFI (note this can cause issues when using syslinux, the kernel and initramfs must be copied to the root of the esp after updates).</p><br>
+			<p>Support for xmonad WM has been added (note it does not come configured out of the box, you will be presented with a blank screen, for info on using xmonad check: arch-wiki xmonad</p><br>
+			<p>Many other features and bug fixes have been added. The keymap is now set in the installer early in the install process meaning users who require a custom keymap will now be able to actually type username / passwords.</p><br>
+			<p>Anyone who has ideas or suggestions for the next release feel free to let me know. Also send any bug reports my way.<br>
+			- https://github.com/deadhead420/arch-linux-anywhere</p><br>
+		</div>
+	</div>
+	<div id="footer">
+        <p>Arch Anywhere 2016 - Development: <a href="mailto:deadhead3492@gmail.com" title="Contact Dylan Schacht">Dylan Schacht</a></p>
+    </div>
+</div>
+</body>
+</html>

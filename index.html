@@ -4,77 +4,172 @@
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="styles.css">
-   <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-   <link rel="manifest" href="images/favicons/manifest.json">
+   <link rel="stylesheet" href="/styles.css">
+   <link rel="stylesheet" href="media_styles.css">
+   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicons/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+   <link rel="manifest" href="/images/favicons/manifest.json">
    <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+   <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
    <meta name="theme-color" content="#ffffff">
    <title>Arch-Anywhere</title>
 </head>
 <body>
-<div id="header">
-<a href='index.html'>
-	<img src='images/header.png' alt='Arch Anywhere'>
-</a>
+
+<div id="archnavbar" class="anb-home">
+	<div id="archnavbarlogo"><h1><a href="/" title="Return Home">Arch Anywhere</a></h1></div>
+        <div id="archnavbarmenu">
+            <ul id="archnavbarlist">
+                <li id="anb-home"><a href="/" title="Arch Anywhere Home">Home</a></li>
+                <li id="anb-forums"><a href="/forums/" title="Community Forums">Forums</a></li>
+                <li id="anb-wiki"><a href="/packages/" title="Arch Anywhere Wiki">Packages</a></li>
+                <li id="anb-aur"><a href="/content/" title="Content & Features">Content</a></li>
+                <li id="anb-download"><a href="/download/" title="Get Arch Anywhere">Download</a></li>
+            </ul>
+        </div>
 </div>
 
-<div id='nav_menu'>
-<ul>
-   <li class='active'><a href='index.html'><span>Home</span></a></li>
-   <li><a href='download.html'><span>Download</span></a></li>
-   <li><a href='#'><span>Tutorials  &#9660;</span></a>
-      <ul class="drop_down">
-		 <li><a href='soon.html'>Arch Anywhere</a></li>
-		 <li><a href='soon.html'>Linux Tutorials</a></li>
-		 <li><a href='youtube.html'>Youtube Videos</a></li>
-	  </ul>
-</ul>
-</div>
+<div id="content">
+	<div id="dev-navbar"></div>
+	<div id="content-wrapper">
+		<div id="content-left">
+			<div id="content-box">
+				<h2>Bringing you Arch - Anywhere</h2>
+				<p>The <a href="/download/">Arch Anywhere ISO</a> contains an automated install script giving you the ability to install a fully custom Arch Linux system in minutes. Write the <a href="/download/">Arch Anywhere ISO</a> to a CD or USB, boot it up from your computer or VirtualBox, and type 'arch-anywhere'. This will invoke the built-in dialog installer allowing you to install Arch Linux with a simple menu system.<br><br>
+					       The installer has support for multiple languages. Every aspect of the install, from partitioning the drive to installing a desktop, and extra software is taken into consideration, leaving you with a fully bootable Arch Linux system, your favorite desktop and programs from the official <a href="https://www.archlinux.org/packages/">Arch Repos</a> included. Install Arch Anywhere, regardless of your level of experience.
+				<br><br>				
+				The <a href="download.html">Arch Anywhere ISO</a> also contains a built-in Arch Linux Wiki. You may search any page on the Arch Wiki from the command line with the 'arch-wiki' command. For example: 'arch-wiki beginner's guide' would pull up the entire beginners guide in the command line. Never be without the wiki again with the arch-wiki command.
+				<br><br>
+				This ISO is aimed at beginner and advanced Arch users alike. If you're curious about Arch Linux and want to try it out, you can do an install into VirtualBox with Arch Anywhere. Or if you're an advanced Arch user who simply needs to deploy many systems quickly, save time typing commands over and over while still being given full freedom to configure your system the way you like.
+				<br></p>
+			</div>
+			<div id="news">
+				<h3>
+					<a href="/news/" title="Browse news feed">Latest News</a>
+					<span class="arrow"></span>
+				</h3>
+			<h4>
+					<a href='/news/arch-anywhere-2.2.5-releaased' title='Arch Anywhere 2.2.5 releaased'>Arch Anywhere 2.2.5 releaased</a>
+				</h4>
+				<p class='timestamp'>2017-01-17</p>
+				<div class='article-content'>
+					            <p>I've just released Arch Anywhere 2.2.5. This release is focused 
+mainly on 
+bug fixes. The label issue when using UEFI boot on USB has been 
+resolved. I have also fixed a few minor bugs in the installer. I've 
+added lxdm-gtk3 for users who select lxde-gtk3 (this resolves a conflict 
+between lxdm & lxdm-gtk3). I've also made some tweaks and updates to the 
+Arch Anywhere XFCE4 Desktop. This includes color and theme updates. Have 
+also updated and improved the .zshrc for users who select zsh as their 
+shell (shown in photo).</p>
 
+            <p>All and all this is not a huge release but it addresses some minor 
+bugs 
+and makes a few improvements to the installer and desktop. If anyone has 
+any issues with the installer please feel free to let me know. Also if 
+you have any ideas or suggestions for the next release. Enjoy the 
+installer and keep on using arch.</p>
 
-<div id='container'>
-	<div class='block'>
-		<div class='block_content'>
-			<div class="float_head" id="header">
-				<img src="images/linux_tech.png" align="right">
-				<h1>Welcome To Arch Anywhere</h1>
-				<h3>Bringing you arch linux wherever, and whenever you need it</h3>
-			</div>
-			<div class="img_float">
-				<img src='images/deadhead-600x600.png' alt="Arch Anywhere" title="Arch Anywhere">
-			</div>
-			<div class="float">
-				<br><h3 style="text-decoration: underline;">Arch Anywhere</h3>
-				<p>Arch Anywhere is an Arch Linux ISO which allows you to install Arch Linux from anywhere, with or without a network connection. This is a dual ISO containing package repos for both architectures (x86_64 and i686). The local package repos enable you to install Arch Linux without a connection to the internet.
-				<br><br>
-				This is the only installer of its kind which will allow you to perform a full Arch Linux install from start to finish without being connected to the network. I have written an installer script which makes it even easier than ever to install Arch with its guided interactive install process. Simply write this ISO to a CD or USB, boot it up, and type 'arch-anywhere'. Install Arch in a hurry, whenever, wherever, without being held back by your network connection.
-				<br><br>
-				This ISO is aimed at beginner and advanced Arch users alike. If you're curious about Arch Linux and just want to try it out you can do an install into virtualbox with Arch Anywhere as it supports virtual box guest utils. Or if you're an advanced Arch user who simply needs to deploy lots of systems very quickly my installer will save you hours in typing commands and downloading packages. Arch Linux, quick, easy, and straight forward, the way its meant to be.
-				<br><br>
-				You can find the latest version of <a href="download.html">Arch Anywhere</a> on the <a href="download.html">Download</a> page
-				<br><br>
-				*Note this installer contains packages updated every 2 weeks, its still your responsibility to establish a working connection and update packages.</p>
-			</div>
-			<div class="footer_float">
-				<p>Any comments, questions, suggestions, or bug reports may be sent to the developer (Dylan Schacht) at:<a class="link" href="mailto:deadhead3492@gmail.com"> deadhead3492@gmail.com</a><br><br>
-				Arch Anywhere Facebook group/ discussion page:<a class="link" target="_blank" href="https://www.facebook.com/groups/1472418559752985/"> Arch Anywhere Group</a><br><br>
-				Arch Anywhere is licensed under GPL v2<br>
-				May the source be with you!<br></p>
+            <p>-Dylan</p>
+				</div>
+			<h4>
+					<a href='/news/arch-anywhere-2.2.4-has-finally-been-released' title='Arch Anywhere 2.2.4 has finally been released'>Arch Anywhere 2.2.4 has finally been released</a>
+				</h4>
+				<p class='timestamp'>2017-01-03</p>
+				<div class='article-content'>
+					            <p>Arch Anywhere 2.2.4 has finally been released and contains many enhancements and bug fixes to the installer. Full syslinux 
+support has been added back for both BIOS and uEFI boot. I have also added support for systemd-boot when using uEFI only. I have also added the option to select your 
+display manager when installing any desktop / wm. You can now choose from lightdm, gdm, lxdm, sddm (default lightdm). I've added the xf86-video-nouveau open source 
+nvidia driver as well as support for DRM KMS when using the latest nvidia drivers.</p>
+
+            <p>Fixes have been made to auto detect graphics drivers based on your chipset manufacturer and in the case of Nvidia is able to determine if you need the latest 
+drivers 
+or legacy (340xx,304xx) based on the chipset PCI ID. This removes any confusion when selecting graphics drivers. The mirrorlist select menu now contains an option 
+for all mirrorlists as well as all https mirrorlists. I've also made some changes to the Arch Anywhere XFCE4 Desktop (shown in photo).</p>
+
+            <p>Overall this is a pretty big release and addresses some major issues found in 2.2.3. Development continues and I will be trying to update the ISO once a month. As 
+always feel free to let me know if you have any ideas, suggestions, or bug reports. Enjoy this release and keep using Arch.</p>
+
+            <p>- Dylan</p>
+				</div>
+			<h4>
+					<a href='/news/arch-anywhere-2-2-3-released' title='Arch Anywhere 2-2-3 released'>Arch Anywhere 2-2-3 released</a>
+				</h4>
+				<p class='timestamp'>2016-09-13</p>
+				<div class='article-content'>
+					            <p>Arch Anywhere 2.2.3 has fianlly been released. This release features 
+many changes and fixes improving the over all usability of the installer and 
+speeding up the process. I've added the budgie desktop to the installer, 
+as well as the option to install a list of 6 different pre-configured 
+command shells. This release also features support for PPPoE internet 
+connections and a few additional packages added top extra software.</p>
+
+            <p>Along with updates to the script I've also created a custom 
+unofficial pacman repository (Arch Anywhere Repo) allowing users to install some 
+pre-compiled packages. This includes: arch-wiki-cli, fetchmirrors, 
+pacaur, & yaourt. More packages coming soon. If there are any custom 
+packages you would like to see added to the repo let me know.</p>
+
+            <p>I've also removed support for syslinux with MBR BIOS boot due to a 
+bug I can't seem to figure out. Syslinux support remains only when using EFI 
+boot. The next release of Arch Anywhere should feature the Chinese 
+language as I've been struggling to get this feature working. More to 
+come soon.</p>
+
+            <p>- Deadhead</p>
+				</div>
 			</div>
 		</div>
+	</div>
+	<div id="content-bar">
+		<div id="content-menu">
+			<h4>Documentation</h4>
+			<ul>
+				<li><a href="/content/features/" title="Features">Features</a></li>
+				<li><a href="#" title="Install Guides">Install Guides</a></li>
+			</ul>
+			<h4>Community</h4>
+			<ul>
+				<li><a href="/forums/" title="Arch Anywhre Forums">Forums</a></li>
+				<li><a href="https://www.facebook.com/groups/1472418559752985/" title="Arch Anywhere Facebook" target="_blank">Facebook Group</a></li>
+			</ul>
+			<h4>Support</h4>
+			<ul>
+				<li><a href="#" title="Donate">Donate</a></li>
+			</ul>
+			<h4>Tools</h4>
+			<ul>
+				<li><a href="/packages" title="Arch Anywhere Utils">Arch Anywhere Package Repo</a></li>
+			</ul>
+			<h4>Development</h4>
+			<ul>
+				<li><a href="https://github.com/deadhead420/arch-linux-anywhere" title="Arch Anywhere Git Repo" target="_blank">Git Project Page</a></li>
+				<li><a href="/news/" title="Arch Anywhere News">Arch Anywhere News Archive</a></li>
+			</ul>
+			<h4>More Resources</h4>
+			<ul>
+				<li><a href="#" title="RSS Feed">RSS Feed</a></li>
+				<li><a href="http://www.unixporn.org/" title="Upload and share unix screenshots" target="_blank">Unixporn.org</a></li>
+			</ul>
+			<br>
+			<a href="/images/arch-anywhere-floyd.jpg">
+                <img src="/images/arch-anywhere-floyd.jpg">
+            </a>
+		</div>
+	</div>	
+	<div id="footer">
+		<p>Arch Anywhere 2016 - Development: <a href="mailto:deadhead3492@gmail.com" title="Contact Dylan Schacht">Dylan Schacht</a></p>
 	</div>
 </div>
 </body>
